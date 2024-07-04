@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Here!</title>
+    <link rel="stylesheet" href="/static/css/apply here.css">
+</head>
+<body>
+    <div class="formDiv">
+        <form method="post" action="{% url 'saveApplicationForm' %}" enctype="multipart/form-data">
+            <h1>Application Form</h1>
+            {% csrf_token %}
+
+            <label for="fullname">Full Name : </label>
+            <input type="text" placeholder="Eg. John Doe" name="fullname" required><br><br>
+
+            <label for="email">Email Address : </label>
+            <input type="text" placeholder="Eg. johndoe123@gmail.com" name="email" required><br><br>
+
+            <label for="phone">Contact Number : </label>
+            <input type="number" placeholder="Eg. 1234567890" name="phone" required><br><br>
+
+            <label for="companies">Which job/internship posting are you applying for?</label>
+            <select name="companies" id="companies">
+                {% for listing in listings %}
+                    <option value="{{ listing.companyname }} - {{ listing.jobtype }} - {{ listing.role }}">{{ listing.companyname }} - {{ listing.jobtype }} - {{ listing.role }}</option>
+                {% endfor %}
+            </select><br><br><hr>
+
+
+            <label for="ques1">Q. Why should we hire you? Give a detailed answer about what you can bring to the company.<br><br>Ans.</label>
+            <textarea placeholder="I believe that I..." name="ques1" cols="90", rows="5"></textarea><br><br>
+
+            <label for="ques2">Q. What is your greatest weakness? What steps will you take to overcome it?<br><br>Ans.</label>
+            <textarea placeholder="My weakness is..." name="ques2" cols="90", rows="5"></textarea><br><br>
+
+            <label for="ques3">Q. Is there anything else you would like to tell us?<br><br>Ans.</label>
+            <textarea placeholder="Enter your answer here." name="ques3" cols="90", rows="5"></textarea><br><br>
+
+            <label for="resume">Resume : </label>
+            <input type="file" name="resume" required><br><br>
+
+            <center><input type="submit" value="Submit" /></center>
+
+        </form>
+    </div>
+</body>
+</html>

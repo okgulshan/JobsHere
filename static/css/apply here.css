@@ -1,0 +1,16 @@
+.formDiv{
+    height : 90vh;
+    width : 100vh;
+    border-color: black;
+    border-style: double;
+    text-align: justify;
+    padding-left: 1vh;
+}
+
+textarea {
+    resize: none;
+}
+
+label{
+    font-size: 2vh;
+}

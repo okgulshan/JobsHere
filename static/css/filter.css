@@ -1,0 +1,80 @@
+#line{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    font-weight:100;
+    text-align:center;
+    justify-content: center;
+    left:450px;
+    padding: 20px;
+    z-index: 1;
+    }
+body{
+    background-color: #F4E1F4;
+}
+#workmode{
+    border: 1px solid black; 
+    border-radius: 20px;
+}
+#a{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background-color: #F4E1F4;
+    top:  215px;
+    left: 140px;
+}
+#Education{
+    border: 1px solid black; 
+    border-radius: 20px;
+}
+#b{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background-color: #F4E1F4;
+    top:  315px;
+    left: 140px;
+}
+#Location{
+    border: 1px solid black; 
+    border-radius: 20px;
+}
+#c{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background-color: #F4E1F4;
+    top:  430px;
+    left: 140px;
+}
+#space{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid black;
+    width:1000px;
+    height: 486px;
+    top: 85px;
+    left: 135px;
+}
+#whitebox{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: #F4E1F4;
+    top: 35px;
+    left: 435px;
+    z-index: 0;
+}
+#box{
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    background-color: #F4E1F4;
+    bottom: 15px;
+    left: 600px;
+    z-index: 0;
+}

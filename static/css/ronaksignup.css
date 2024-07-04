@@ -1,0 +1,48 @@
+button{
+    /* background-color: ; */
+    position: absolute;
+    border-radius: 50px;
+    left: 210px;
+    
+}
+button:hover{
+    background-color: beige;
+}
+
+body{
+    position:absolute;
+    left: 33.33%;
+}
+form{
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: inset;
+    justify-content: space-around;
+    text-decoration-color: cadetblue;
+}
+.Password{
+    right: 50px;
+ }
+ /* rgba(255, 228, 196, 0.409) */
+#main{
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #EAEAE9;
+    /* background-image: url("pexels-photo-3184460.jpeg"); */
+    border: 1px dotted black;
+    /* padding: 50px; */
+    padding-left: 35px;
+    padding-right: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+    left:430px;
+    border-radius: 50px;
+    padding-bottom: 35px;
+    box-shadow: 0 0 50px -10px black;
+}
+.resume{
+    padding-left: 15px;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Internship</title>
+    <link rel="stylesheet" href="/static/css/form.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+
+    <form method="post" action="{% url 'internshipform' %}">
+     <center><h1>Add Internship</h1></center>
+    {% csrf_token %}
+    <label>
+        Companies Name
+    </label>
+    <br><br>
+    <input type="text" name="companyname"/>
+    <br><br>
+
+    <label>
+        jobtype
+    </label>
+    <br><br>
+    <select name="jobtype">
+        <option value="workfromhome">
+            Work from home
+        </option>
+        <option value="onsite">
+            On-site
+        </option>
+        <option value="hybrid">
+            Hybrid
+        </option>
+    </select>
+    <br><br>
+
+    <label>
+        Role
+    </label>
+    <br><br>
+    <input type="text" name="role"/>
+    <br><br>
+
+    <label>
+        Job Description
+    </label>
+    <br><br>
+    <input type="text" name="jobdescription"/>
+    <br><br>
+    <label>
+        Responsibilities
+    </label>
+    <br><br>
+    <input type="text" name="responsibilities"/>
+    <br><br>
+    <label>
+        Qualifications
+    </label>
+    <br><br>
+    <input type="text" name="qualifications"/>
+    <br><br>
+    <label>
+    
+        Gains and benefits
+    </label>
+    <br><br>
+    <input type="text" name="gainsandbenefits"/>
+    <br><br>
+    <label>
+        Location
+    </label>
+    <br><br>
+    <input type="text" name="location"/>
+    <br><br>
+    <label>
+        Additional Information
+    </label>
+    <br><br>
+    <input type="text" name="additionalinformation"/>
+    <br><br>
+    <label>
+        Add banner
+    </label>
+    <br><br>
+    <input type="file" name="banner"/>
+    <br><br>
+    <button type="submit" >
+        Save
+    </button>
+    <br><br>
+    </form>
+    <button onclick="window.location.href='internships'" >
+        back
+    </button>
+    <footer>
+    <div class="footer">
+    <a href="about us" class="hyp2">About Us</a>
+    <a href="privacy policy" class="hyp2">Privacy Policy</a>
+    <a href="report issue" class="hyp2">Report Issue</a>
+    <a href="contact us" class="hyp2">Contact Us</a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Internship List</title>
+    <link rel="stylesheet" href="/static/css/Job List CSS.css">
+</head>
+<body style="background-color:white">
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+    <form><center>
+        <input type="search" id="search" placeholder="search">
+        <button type="submit" id="searchbutton">Search</button></center>
+    </form>
+    
+    <div id="a" class="box" onclick="window.location.href='cadence internship'">
+        <center>
+            <h1>Product Validation Internship</h1>
+            <h2>Cadence</h2><br><br>
+            <a href="https://www.cadence.com/en_US/home.html" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Cadence_Logo_2019.png" alt="Cadence Logo" style="height:125px;" id="company">
+            </a><br><br>
+            <p id="desc"><h3><br><br><br>
+                Job Title : Product Validation Intern<br><br>
+                Company : Cadence Design Systems<br><br>
+                Location : Noida<br><br>
+                Job Type : Internship (2 months)
+        </center></h3></p>
+    </div>
+
+    <div id="b" class="box" onclick="window.location.href='happyfox internship'">
+        <center>
+            <h1>QA Internship</h1>
+            <h2>Happyfox</h2>
+            <a href="https://www.happyfox.com/" target="_blank">
+                <img src="https://assets.www.happyfox.com/img/Help-desk-customer-support.svg" alt="Happyfox Logo" id="company">
+            </a>
+            <p id="desc"><h3>
+                Job Title : Quality Assurance Intern<br><br>
+                Company : Happyfox<br><br>
+                Location : Bangalore<br><br>
+                Job Type : Internship (3 months)
+        </center></h3></p>
+    </div>
+
+    <div id="c" class="box" onclick="window.location.href='axiom internship'">
+        <center>
+            <h1>Python Internship</h1>
+            <h2>Axiom Corporation</h2>
+            <a href="https://www.axiommrc.com/" target="_blank">
+                <img src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/jhpflopzuyuckstadk44" alt="Axiom Market Research Logo"  style="height:250px; width:300px;" id="company">
+            </a>
+            <p id="desc"><h3><br>
+                Job Title : Python Intern<br><br>
+                Company : Axiom Corporation<br><br>
+                Location : Pune<br><br>
+                Job Type : Internship (2 months)
+        </center></h3></p>
+    </div>
+
+   {% for intern in interns %}
+    <div id="d" class="box" onclick="window.location.href='detailpage'">
+        <center>
+            <h1>{{intern.role}}</h1>
+            <h2>{{intern.companyname}}</h2>
+            <a href="#cdf" target="_blank">
+                <img src={{intern.banner}} alt="{{intern.companyname}} banner" id="company">
+            </a>
+            <p id="desc"><h3>
+                Job Title : {{intern.role}}<br><br>
+                Company : {{intern.companyname}}<br><br>
+                Location : {{intern.jobtype}}<br><br>
+                Job Type : Internship (3 months)
+        </center></h3></p>
+    </div>
+    {% endfor %}
+
+    <button onclick="window.location.href='internshipform'">
+        + ADD more internships
+    </button>
+    <footer>
+        <div class="footer">
+        <a href="about us" class="hyp2">About Us</a>
+        <a href="privacy policy" class="hyp2">Privacy Policy</a>
+        <a href="report issue" class="hyp2">Report Issue</a>
+        <a href="contact us" class="hyp2">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html> 

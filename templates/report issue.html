@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Report issue</title>
+    <link rel="stylesheet" href="/static/css/report issue.css">
+</head>
+<body>
+
+    <form method="post" action="{% url 'reportissue' %}">
+    {% csrf_token %}
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+<div id="text"><center>
+<h1 class="reportissue"><b>Report Issue</b></h1>
+<br>
+<label for="reportedby"><b>Reported By</b></label><br>
+<input type="text" placeholder="Name" name="reportedby" required>
+<br><br>
+<label for="Severity"><b>Severity</b></label><br>
+<select name="Severity" id="severity" placeholder="select">
+    <option value="critical">Very High</option>
+    <option value="critical">High</option>
+    <option value="moderate">Medium</option>
+    <option value="less significant">Low</option>
+    <option value="less significant">Very Low</option>
+</select>
+<br><br>
+<label for="Description"><b>Description</b></label><br>
+<textarea name="Description" placeholder="Please elaborate about the issue here" rows="10" cols="100"></textarea>
+<br><br>
+<button type="submit">
+    submit
+</button>
+
+</div></center>
+</form>
+<footer>
+    <div class="footer">
+    <a href="about us" class="hyp2">About Us</a>
+    <a href="privacy policy" class="hyp2">Privacy Policy</a>
+    <a href="report issue" class="hyp2">Report Issue</a>
+    <a href="contact us" class="hyp2">Contact Us</a>
+    </div>
+</footer>
+</body>
+</html>

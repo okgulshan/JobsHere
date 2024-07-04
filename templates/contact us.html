@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <link rel="stylesheet" href="/static/css/contact us.css">
+</head>
+<body>
+    <form method="post" action="{% url 'contactus' %}">
+        {% csrf_token %}
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+<center><h1 class="contactus"><b>Contact</b></h1></center>
+<pre class="contactus content"> <b><center>We would love to hear!</center></b>
+<center>We like to talk with people.Feel free to say hello!</center>
+</pre>
+<br>
+<div id="input">
+    <label for="yourname"><b>Your Name</b></label><br>
+    <input type="text" placeholder="Name" name="yourname" required>
+    <br><br> 
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Email" name="email" required>
+    <br><br>
+    <label for="message"><b>Message</b></label><br>
+    <textarea name="message" placeholder="Message" rows="10" cols="100"></textarea>
+    <br><br>
+    <input id="submit" type="submit" value="Submit" onclick="{{m}}">
+    <br><br>
+</form>
+</div>
+<footer>
+    <div class="footer">
+    <a href="about us" class="hyp2">About Us</a>
+    <a href="privacy policy" class="hyp2">Privacy Policy</a>
+    <a href="report issue" class="hyp2">Report Issue</a>
+    <a href="contact us" class="hyp2">Contact Us</a>
+    </div>
+</footer>
+</body>
+
+</html>

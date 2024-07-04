@@ -1,0 +1,158 @@
+.box {
+	position: absolute;
+	width: 28%;
+	height: 78%;
+	border-radius:50px;
+	border-style: solid;
+	border-width: thick;
+	background: white;
+	transition-delay: 0ms;
+	transition-timing-function: ease-in;
+}
+
+.box:hover {
+	background: darkgray;
+	color: white;
+  }
+
+#company {
+	width: 400px;
+	height: 250px;
+}
+
+#a {
+	position: absolute;
+	left: 6%;
+	top: 35%;
+}
+
+#b {
+	position: absolute;
+	left: 36%;
+	top: 35%;
+}
+
+#c {
+	position: absolute;
+	left: 66%;
+	top: 35%;
+}
+
+#d {
+	position: absolute;
+	left: 6%;
+	top: 120%;
+}
+
+.pics {
+	left: 150px;
+	top: 400px;
+	background: lightgrey;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: GaretBook;
+}
+
+@font-face {
+    font-family: GaretBook;
+    src: url(Garet-Book.woff);
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+.navigation .image{
+	position: absolute;
+	margin-left:-80px;
+	width:170px;
+	height:50px;
+	margin-top:2.25px;
+	}
+	.navigation a{
+	margin-left: 10%;
+	text-decoration:none;
+	font-family:arial;
+	color:black;
+	font-size:20px;
+	padding:14px;
+	
+	}
+.navigation{
+	font-family:arial;
+	display:block;
+	border-bottom-style:solid;
+	border-bottom-width:0.2px;
+	border-bottom-color:grey;
+	padding:40px;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+*{
+	margin:0;
+	padding:0;
+}
+.navigation .login{
+	border:solid;
+	border-width:0.5px;
+	background-color:white;
+	border-radius:50px;
+	color:	#23a1d1;
+	padding:12px;
+}
+.hype {
+	text-decoration: none;
+	display:inline-block;
+}
+	
+.hype::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background:#23a1d1;
+	transition:width 0.3s ease;
+}
+	
+.hype:hover::after{
+	width: 100%;
+}
+footer .footer{
+	display:flex;
+	justify-content:center;
+	gap:70px;
+	
+	background-color:#666;
+	height:50px;
+	padding:13px;
+}
+.footer .hyp2
+{
+text-decoration:none;
+color:white;
+font-size:17px;
+border-style:solid;
+border-width:0.5px;
+border-color:white;
+padding:13px;
+border-radius:20px;
+}
+#search{
+	margin:40px;
+	margin-left:450px;
+	padding:12px;
+	border-radius:50px;
+	box-shadow: 0 8px 12px -2px rgba(0,0,0,.2);
+	}
+	#searchbutton{
+	width:5%;
+	border-radius:10px;
+	padding:7px;
+	margin-right:550px;
+	}
+
+footer {
+	position: absolute;
+	top: 200%;
+	width: 100%;
+}

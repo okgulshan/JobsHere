@@ -1,0 +1,150 @@
+* {box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+img{
+  margin-top: 10%;
+}
+
+
+#buttonsflexcontainer{
+  display:flex;
+  justify-content: center;
+  gap:40px;
+  margin-top: 10%;
+}
+.open-button {
+    background-color:black;
+        font-weight: bold;
+        border:black;
+        color: white;
+        padding:15px 32px;
+        text-align:center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 1px;
+    
+        
+}
+.signup
+{
+background-color:black;
+font-weight:bold;
+border:black;
+color: white;                             /* signup button has inline styling */
+padding: 15px 32px;
+text-align:center;
+text-decoration: none;
+font-size: 20px;
+outline: none;
+border-radius: 1px;
+cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position:absolute;
+  top: 80px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  left:70%;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.remember {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label {
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+}
+
+
+.remember a {
+    color: black;
+    text-decoration: none;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.registration a {
+    color:blue(35, 214, 238);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+img{
+    object-position: center;
+    margin-left: 35%;
+}
+footer{
+    background-color: black;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    margin-top: 14%;
+    margin-bottom: 0px;
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Garet-Book\(1\).woff);
+         }
+#login{
+text-decoration: none;
+color: white;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Techolution AI Internship</title>
+    <link rel="stylesheet" href="/static/css/detl.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+    {% for data in data %}
+    <a href="#wbesitelink" target="_blank">
+        <img src="{{data.banner}}" alt="{{data.companyname}} banner" id="banner">
+    </a>
+    <center><h1>{{data.role}} - {{data.companyname}}</h1></center>
+    <p>
+    Job Title : {{data.role}}<br>
+    Company : {{data.companyname}}<br>
+    {% comment %} Location : {{}}<br> {% endcomment %}
+    Job Type : Internship (3 months)<br>
+    </p>
+    <dl>
+        <dt><u>Job Description</u></dt>
+        <dd>{{data.jobdescription}}</dd>
+        <hr>
+        <dt><u>Responsibilities</u></dt>
+        <dd>{{data.responsibilities}}</dd>
+        <hr>
+        <dt><u>Gains and Benefits</u></dt>
+        <dd>
+            {{data.gainsandbenefits}}
+        </dd>
+        <hr>
+        <dt><u>Qualifications</u></dt>
+        <dd>
+            {{data.qualifications}}
+        </dd>
+        <hr>
+        <dt><u>Additional Information</u></dt>
+        <dd>
+            {{data.additionalinformation}}
+        </dd>
+        <hr>
+        <dt><u>Location</u></dt>
+        <dd>
+            {{data.location}}
+        </dd>
+    </dl>
+     <button onclick="window.location.href='applyhere'">
+    Apply for {{data.role}}-{{data.companyname}}
+    </button>
+    <br>
+    {% endfor %}
+
+
+    <footer>
+        <div class="footer">
+        <a href="about us" class="hyp2">About Us</a>
+        <a href="privacy policy" class="hyp2">Privacy Policy</a>
+        <a href="report issue" class="hyp2">Report Issue</a>
+        <a href="contact us" class="hyp2">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>

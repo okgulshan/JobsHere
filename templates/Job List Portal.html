@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Job List</title>
+    <link rel="stylesheet" href="/static/css/Job List CSS.css">
+</head>
+<body style="background-color: white;">
+    <nav class="navigation">
+        <a href="homepage"><img src="/static/images/WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" class="image"></a>
+        <a href="jobs" class="hype">Jobs</a>
+        <a href="internships" class="hype">Internships</a>
+        <a href="#resume" class="hype">Create resume</a>
+        <a href="#loginpage" class="login">My Profile
+        </a>
+    </nav>
+    <form>
+        <center>
+        <input type="search" id="search" placeholder="search">
+        <button type="submit" id="searchbutton">Search</button>
+    </center>
+    </form>
+
+    <div id="a" class="box" onclick="window.location.href='loreal job'">
+        <center>
+            <h1>Sales Manager</h1>
+            <h2>L'Oréal</h2>
+            <a href="https://www.loreal.com/en/" target="_blank">
+                <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Emblema-Loreal.png" alt="L'Oréal Logo" id="company">
+            </a>
+        <p id="desc"><h3>
+                Job Title : Sales Manager<br><br>
+                Company : L'Oréal<br><br>
+                Location : New Delhi<br><br>
+                Job Type : Full-time.
+            </center></h3></p>
+    </div>
+
+    <div id="b" class="box" onclick="window.location.href='sarlabirla job'">
+        <center>
+            <h1>Physics Teacher</h1>
+            <h2>Sarala Birla Public School</h2>
+            <a href="https://sbpsranchi.com/" target="_blank">
+                <img src="https://sbpsranchi.in/images/SBPS-NEW-LOGO.png" alt="SBPS Logo" id="company">
+            </a>
+        <p id="desc"><h3>
+                Job Title : Physics Teacher<br><br>
+                Company : Sarala Birla Public School<br><br>
+                Location : Ranchi<br><br>
+                Job Type : Full-time.
+        </center></h3></p>
+    </div>
+
+    <div id="c" class="box" onclick="window.location.href='apollo job'">
+        <center>
+            <h1>ENT Specialist</h1>
+            <h2>Apollo Spectra Hospitals</h2>
+            <a href="https://www.apollospectra.com/" target="_blank">
+                <img src="https://companieslogo.com/img/orig/APOLLOHOSP.NS_BIG-7f75df62.png?t=1604067028" alt="Apollo Hospitals Logo" style="height:300px;" id="company">
+            </a>
+        <p id="desc"><h3>
+                Job Title : Ear, Nose, and Throat (ENT) Specialist<br><br>
+                Company : Apollo Spectra Hospitals<br><br>
+                Location : Hyderabad<br><br>
+                Job Type : Full-time.
+        </center></h3></p>
+    </div>
+
+    {% for jobs in jobs %}
+    <div id="d" class="box" onclick="window.location.href='detailjobs'">
+        <center>
+            <h1>{{jobs.role}}</h1>
+            <h2>{{jobs.companyname}}</h2>
+            <a href="#cdf" target="_blank">
+                <img src={{data.banner.url}} alt="Company's banner" id="company">
+            </a>
+            <p id="desc"><h3>
+                Job Title : {{jobs.role}}<br><br>
+                Company : {{jobs.companyname}}<br><br>
+                Location : {{jobs.location}}<br><br>
+                Job Type : {{jobs.jobtype}}
+        </center></h3></p>
+    </div>
+    {% endfor %}
+    <button onclick="window.location.href='jobform'" id="addmore">
+    + ADD more jobs
+    </button>
+    <footer>
+        <div class="footer">
+        <a href="about us" class="hyp2">About Us</a>
+        <a href="privacy policy" class="hyp2">Privacy Policy</a>
+        <a href="report issue" class="hyp2">Report Issue</a>
+        <a href="contact us" class="hyp2">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html> 

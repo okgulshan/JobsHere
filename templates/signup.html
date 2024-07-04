@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Jobshere.com</title>
+    <link rel="stylesheet" href="/static/css/ronaksignup.css">
+</head>
+<body>
+    <div id="main">
+    <form style="left: 500px;" method="post" action="{% url 'signup' %}">
+    <h1 style="font-size: 100px;left: 40px;">Sign up</h1>
+    {% csrf_token %}
+    <h1 style="color: black;">
+        {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+    </h1>
+    <label for="First Name"><b>First Name</b></label>
+    <input type="text" placeholder="Enter your first name" name="firstname" required><br><br>
+
+    <label for="Last Name"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter your last name" name="lastname" required><br><br>
+
+    <label for="username"><b>Email</b></label>
+    <input type="text" placeholder="Enter your Email ID" name="email" required><br><br>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter your Username" name="username" required><br><br>
+
+    <label for="password1"><b>Password</b></label>
+    <input type="password" placeholder="Enter the password" name="password1" required><br><br>
+
+    <label for="password2"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter the same password again" name="password2" required><br><br>
+
+    <input type="submit" value="Create Account" /><br><br>
+    </form>
+    <br>
+    <b>Already have an account </b><a href="/">login</a>
+    </div>
+</body>
+</html>
